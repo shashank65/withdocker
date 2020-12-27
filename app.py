@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 mul_reg = open("multiple_regression_model.pkl", "rb")
 ml_model = joblib.load(mul_reg)
-
+# hi
 @app.route("/")
 def home():
     return render_template('home.html')
