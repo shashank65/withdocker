@@ -22,8 +22,8 @@ stages:
     steps:
     - task: Docker@2
       inputs:
-        containerRegistry: 'azure_docker_pipe'
-        repository: 'shashank2910/azuredock'
+        containerRegistry: 'dockerconnection'
+        repository: 'shashank2910/azuredockupdated'
         command: 'buildAndPush'
         Dockerfile: '**/Dockerfile'
         tags: '$(tag)'
